@@ -882,7 +882,7 @@ def randlh(k, n, edges=False):
     # create k by n dimensional sampling list - to be popped at random.
     popper = []
     for i in range(k):
-        popper.append(range(n))
+        popper.append(list(range(n)))
 
     # create latin hypercube
     for i in range(n):
